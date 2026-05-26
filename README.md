@@ -126,3 +126,8 @@ Ashish Modak
 Python automation + web scraping learning project using Selenium, filters, and JSON pipeline.
 
 ---
+
+# Important Notice
+During use of the bot, you can copy and paste any website URLs as per your choice and should check or visit the websites frequently to access the latest content selectors using CSS Seletor and XPATH since it changes time to time and some websites uses anti scraping system to prevent data scraping.
+
+---
