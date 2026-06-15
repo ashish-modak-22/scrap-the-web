@@ -131,3 +131,7 @@ Python automation + web scraping learning project using Selenium, filters, and J
 During use of the bot, you can copy and paste any website URLs as per your choice and should check or visit the websites frequently to access the latest content selectors using CSS Seletor and XPATH since it changes time to time and some websites uses anti scraping system to prevent data scraping.
 
 ---
+
+## **Important Modification: An explicit wait can be done for the webdriver as per certain conditions for a smooth scrapping**
+
+---
