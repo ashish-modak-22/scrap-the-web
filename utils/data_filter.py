@@ -2,9 +2,14 @@ def remove_Duplicates(data, key):
 
     # Stores already encountered values to quickly detect duplicates
     seen_data = set()
+
+    # Stores the final list containing only unique items
     unique_data = []
 
+    # Iterate through each dictionary in the input list
     for item in data:
+
+        # Extract the value associated with the specified key
         val = item.get(key)
 
         if val not in seen_data:
