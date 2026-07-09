@@ -12,10 +12,12 @@ def remove_Duplicates(data, key):
         # Extract the value associated with the specified key
         val = item.get(key)
 
+        # Add the item only if its key value has not been seen before
         if val not in seen_data:
-            seen_data.add(val)
-            unique_data.append(item)
+            seen_data.add(val)           # Mark the value as seen
+            unique_data.append(item)     # Preserve the first occurence
 
+    # Return the list with duplicate entries removed
     return unique_data
 
 
