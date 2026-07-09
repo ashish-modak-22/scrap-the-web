@@ -52,7 +52,10 @@ def clean_empty_values(data, key):
     # Stores items that contain valid (non-emoty) values for the given key
     clean = []
 
+    # Iterate through each dictionary in the input list
     for item in data:
+
+        # Get the value associated with the specified key
         val = item.get(key)
         if val is not None and val!="":
             clean.append(item)
