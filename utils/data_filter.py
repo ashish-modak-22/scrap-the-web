@@ -57,7 +57,10 @@ def clean_empty_values(data, key):
 
         # Get the value associated with the specified key
         val = item.get(key)
+
+        # Keep the item only if the value exists and is not an empty string
         if val is not None and val!="":
             clean.append(item)
 
+    # Return the list after removing items with empty values
     return clean
