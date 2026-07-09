@@ -48,6 +48,8 @@ def keyword_Filter(data,key, keywords):
 
 
 def clean_empty_values(data, key):
+
+    # Stores items that contain valid (non-emoty) values for the given key
     clean = []
 
     for item in data:
