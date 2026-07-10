@@ -2,9 +2,13 @@ from selenium.webdriver.common.by import By
 from selenium_driver.selenium_driver_Setup import get_Driver
 
 
+
 def scrape_deals():
+
+    # Initialize and configure the Selenium WebDriver 
     driver = get_Driver()
 
+    # Store all scraped product details
     deals_list = []
 
     try:
