@@ -12,8 +12,10 @@ def scrape_deals():
     deals_list = []
 
     try:
+        # Open the Amazon search results page
         driver.get("https://www.amazon.in/s?k=laptop")
 
+        # Wait for page elements to be loaded
         driver.implicitly_wait(6)
 
         products = driver.find_elements(By.XPATH, "//div[contains(@data-component-type,'s-search-result')]")
