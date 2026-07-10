@@ -29,15 +29,19 @@ def scrape_job():
         # Display the total number of jobs found
         print("TOTAL JOBS FOUND:", len(jobs))
 
+        
         # Extract details from each job listing
         for job in jobs:
 
             try:
+
+                # Get the job title
                 title = job.find_element(
                     By.CSS_SELECTOR,
                     "h2[itemprop='title']"
                 ).text
 
+                # Get the direct URL of the job posting
                 link = job.get_attribute("href")
 
                 jobs_list.append({
