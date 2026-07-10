@@ -26,11 +26,17 @@ def scrape_deals():
             try:
                 # Get the product title
                 title = product.find_element(By.CSS_SELECTOR, "h2 span").text
+
+                # Get the product URL
                 link = product.find_element(By.TAG_NAME, "a").get_attribute("href")
 
+                # Try to extract the product price
                 try:
                     price = product.find_element(By.CLASS_NAME, "a-price-whole").text
+                
                 except:
+
+                    # Use a default value if the price is unavailable
                     price = "N/A"
 
                 deals_list.append({
