@@ -22,12 +22,15 @@ def main():
 
         choice = input("\nEnter your choice ----> 1/2/3: ")
 
+        
         # Handle job scrapping
         if choice == "1":
             print("\nOk, you want to scrape the job details.....\n")
 
+            # Scrape job listings
             jobs = scrape_job()
 
+            # Check if any jobs were found
             if not jobs:
                 print("Sorry, we haven't found any jobs at the moment!")
                 continue
