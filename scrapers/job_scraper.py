@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium_driver.selenium_driver_Setup import get_Driver
 
 
+
 def scrape_job():
 
     # Initialize and configure the selenium WebDriver
@@ -10,9 +11,13 @@ def scrape_job():
     # Store all scraped job listings
     jobs_list = []
 
+    
     try:
+
+        # Open the RemoteOK Python jobs page
         driver.get("https://remoteok.com/remote-python-jobs")
 
+        # Wait for the page to be loaded
         driver.implicitly_wait(10)
 
         jobs = driver.find_elements(
