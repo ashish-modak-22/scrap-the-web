@@ -23,7 +23,9 @@ def scrape_deals():
 
         # Extract information from each product card
         for product in products:
+            
             try:
+                
                 # Get the product title
                 title = product.find_element(By.CSS_SELECTOR, "h2 span").text
 
@@ -39,6 +41,7 @@ def scrape_deals():
                     # Use a default value if the price is unavailable
                     price = "N/A"
 
+                # Save the extracted product information
                 deals_list.append({
                     "title": title,
                     "price": price,
@@ -46,6 +49,8 @@ def scrape_deals():
                 })
 
             except:
+
+                # Skip the current product if required data can't be extracted
                 continue
 
     except Exception as e:
